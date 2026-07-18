@@ -1,0 +1,239 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+
+}
+
+.voltar{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.voltar button{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px 22px;
+
+    background: #d4af37;
+    color: #fff;
+
+    border: none;
+    border-radius: 50px;
+
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.voltar button:hover{
+    background: #b8922d;
+    transform: translateX(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+
+.voltar i{
+    font-size: 15px;
+}
+
+body{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:20px;
+
+background:
+
+linear-gradient(rgba(20,20,20,.70),rgba(20,20,20,.70)),
+url(logo/bg..jpeg);
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.card{
+
+width:100%;
+
+max-width:550px;
+
+padding:35px;
+
+border-radius:25px;
+
+backdrop-filter:blur(18px);
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+animation:fade .8s;
+
+}
+
+.icon{
+
+font-size:60px;
+
+color:#d4af7a;
+
+margin-bottom:20px;
+
+display:block;
+
+text-align:center;
+
+}
+
+h1{
+
+color:white;
+
+text-align:center;
+
+margin-bottom:8px;
+
+}
+
+p{
+
+text-align:center;
+
+color:#ddd;
+
+margin-bottom:25px;
+
+}
+
+.input-box{
+
+display:flex;
+
+flex-direction:column;
+
+margin-bottom:18px;
+
+}
+
+label{
+
+color:white;
+
+margin-bottom:8px;
+
+font-size:14px;
+
+}
+
+input,select,textarea{
+
+padding:14px;
+
+border:none;
+
+outline:none;
+
+border-radius:12px;
+
+background:rgba(255, 255, 255, 0.869);
+
+color:black;
+
+font-size:15px;
+
+}
+
+input::placeholder,
+textarea::placeholder{
+
+color:#ddd;
+
+}
+
+.dupla{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+}
+
+button{
+
+width:100%;
+
+padding:16px;
+
+border:none;
+
+border-radius:15px;
+
+background:#d4af7a;
+
+color:#111;
+
+font-size:17px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+margin-top:10px;
+
+}
+
+button:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 12px 25px rgba(212,175,122,.5);
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.dupla{
+
+grid-template-columns:1fr;
+
+}
+
+}

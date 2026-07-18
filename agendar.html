@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agendar Horário | Anielly Sousa</title>
+
+<link rel="stylesheet" href="agendar.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="voltar">
+
+    <button onclick="history.back()">
+        <i class="fa-solid fa-arrow-left"></i>
+        Voltar
+    </button>
+
+</div>
+
+    <div class="card">
+
+        <i class="fa-solid fa-calendar-check icon"></i>
+
+        <h1>Agendar Horário</h1>
+
+        <p>Preencha os dados abaixo.</p>
+
+        <form id="formulario">
+
+            <div class="input-box">
+
+                <label>Nome Completo</label>
+
+                <input
+                type="text"
+                id="nome"
+                placeholder="Seu nome"
+                required>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>WhatsApp</label>
+
+                <input
+                type="tel"
+                id="telefone"
+                placeholder="(85) 99999-9999"
+                required>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Serviço</label>
+
+                <select id="servico">
+
+                    <option>Manicure</option>
+
+                    <option>Pedicure</option>
+
+                    <option>Manicure + Pedicure</option>
+
+                    <option>Blindagem</option>
+
+                    <option>Alongamento em Gel</option>
+
+                    <option>Designer de Sobrancelhas</option>
+
+                    <option>Designer + Henna</option>
+
+                </select>
+
+            </div>
+
+            <div class="dupla">
+
+                <div class="input-box">
+
+                    <label>Data</label>
+
+                    <input type="date" id="data" required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Horário</label>
+
+                    <input type="time" id="hora" required>
+
+                </div>
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Observações</label>
+
+                <textarea
+                id="obs"
+                rows="4"
+                placeholder="Escreva alguma observação..."></textarea>
+
+            </div>
+
+            <button type="submit">
+
+                <i class="wa.me/+5588999965396"></i>
+
+                Agendar pelo WhatsApp
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="agendar.js"></script>
+
+</body>
+
+</html>
