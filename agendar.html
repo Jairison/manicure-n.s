@@ -3,139 +3,128 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Agendar Horário | Anielly Sousa</title>
+    <title>Agendar Horário | Nielly Sousa</title>
 
-<link rel="stylesheet" href="agendar.css">
+    <link rel="stylesheet" href="agendar.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <div class="voltar">
+        <div class="voltar">
 
-    <button onclick="history.back()">
-        <i class="fa-solid fa-arrow-left"></i>
-        Voltar
-    </button>
-
-</div>
-
-    <div class="card">
-
-        <i class="fa-solid fa-calendar-check icon"></i>
-
-        <h1>Agendar Horário</h1>
-
-        <p>Preencha os dados abaixo.</p>
-
-        <form id="formulario">
-
-            <div class="input-box">
-
-                <label>Nome Completo</label>
-
-                <input
-                type="text"
-                id="nome"
-                placeholder="Seu nome"
-                required>
-
-            </div>
-
-            <div class="input-box">
-
-                <label>WhatsApp</label>
-
-                <input
-                type="tel"
-                id="telefone"
-                placeholder="(85) 99999-9999"
-                required>
-
-            </div>
-
-            <div class="input-box">
-
-                <label>Serviço</label>
-
-                <select id="servico">
-
-                    <option>Manicure</option>
-
-                    <option>Pedicure</option>
-
-                    <option>Manicure + Pedicure</option>
-
-                    <option>Blindagem</option>
-
-                    <option>Alongamento em Gel</option>
-
-                    <option>Designer de Sobrancelhas</option>
-
-                    <option>Designer + Henna</option>
-
-                </select>
-
-            </div>
-
-            <div class="dupla">
-
-                <div class="input-box">
-
-                    <label>Data</label>
-
-                    <input type="date" id="data" required>
-
-                </div>
-
-                <div class="input-box">
-
-                    <label>Horário</label>
-
-                    <input type="time" id="hora" required>
-
-                </div>
-
-            </div>
-
-            <div class="input-box">
-
-                <label>Observações</label>
-
-                <textarea
-                id="obs"
-                rows="4"
-                placeholder="Escreva alguma observação..."></textarea>
-
-            </div>
-
-            <button type="submit">
-
-                <i class="wa.me/+5588999965396"></i>
-
-                Agendar pelo WhatsApp
-
+            <button onclick="history.back()">
+                <i class="fa-solid fa-arrow-left"></i>
+                Voltar
             </button>
 
-        </form>
+        </div>
+
+        <div class="card">
+
+            <i class="fa-solid fa-calendar-check icon"></i>
+
+            <h1>Agendar Horário</h1>
+
+            <p>Preencha os dados abaixo.</p>
+
+            <form id="formulario">
+
+                <div class="input-box">
+
+                    <label>Nome Completo</label>
+
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>WhatsApp</label>
+
+                    <input type="tel" id="telefone" placeholder="(85) 99999-9999" required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Serviço</label>
+
+                    <select id="servico">
+
+                        <option>Manicure- R$ 25,00</option>
+
+                        <option>Padicure- R$ 30,00 </option>
+
+                        <option>COMBO Manicure + Pedicure- R$ 45,00</option>
+
+                        <option>Blindagem- R$ 60,00</option>
+
+                        <option>Esmaltação- R$ 50,00</option>
+
+                        <option>Designer de Sobrancelhas- R$ 30,00</option>
+
+                        <option>Designer + Henna- R$ 45,00</option>
+
+                    </select>
+
+                </div>
+
+                <div class="dupla">
+
+                    <div class="input-box">
+
+                        <label>Data</label>
+
+                        <input type="date" id="data" required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Horário</label>
+
+                        <input type="time" id="hora" required>
+
+                    </div>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Observações</label>
+
+                    <textarea id="obs" rows="4" placeholder="Escreva alguma observação..."></textarea>
+
+                </div>
+
+                <button type="button" onclick="agendarWhatsApp()">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    Agendar pelo WhatsApp
+
+                </button>
+
+            </form>
+
+        </div>
 
     </div>
 
-</div>
-
-<script src="agendar.js"></script>
+    <script src="agendar.js"></script>
 
 </body>
 
